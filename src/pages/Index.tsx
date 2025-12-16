@@ -343,7 +343,7 @@ const Reviews = () => (
 );
 
 const Contact = () => {
-  const googleMapsUrl = "https://www.google.com/maps?q=28.487667,72.186750";
+  const googleMapsUrl = "https://maps.app.goo.gl/3ZVyzYsSVZYfhhSK9";
 
   return (
     <section id="contact" className="py-24 bg-secondary/30">
