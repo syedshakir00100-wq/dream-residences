@@ -10,17 +10,17 @@ import gallery5 from '@/assets/gallery-5.jpeg';
 
 const reviews = [
   { name: "Mohammad Irfan", rating: 5, review: "Excellent service! Found our dream 3BHK flat. The team was professional and helpful throughout." },
-  { name: "Ayesha Khan", rating: 5, review: "Tenga & Sons made home buying so easy. The loan process was smooth and hassle-free." },
+  { name: "Ayesha Khan", rating: 5, review: "Acreage Homes made home buying so easy. The loan process was smooth and hassle-free." },
   { name: "Faisal Ahmed", rating: 5, review: "Best real estate experience in Delhi. Highly recommend for anyone looking for quality flats." },
   { name: "Zainab Fatima", rating: 4, review: "Great properties, transparent dealings. Very satisfied with our new 2BHK home." },
   { name: "Imran Siddiqui", rating: 5, review: "Professional team, beautiful properties. They helped us get an amazing loan deal too!" },
-  { name: "Nadia Begum", rating: 5, review: "Outstanding service and support. Our 4BHK is absolutely perfect. Thank you Tenga & Sons!" },
+  { name: "Nadia Begum", rating: 5, review: "Outstanding service and support. Our 4BHK is absolutely perfect. Thank you Acreage Homes!" },
 ];
 
 const properties = [
-  { type: "2 BHK", desc: "Compact & Cozy", price: "Starting ₹45L", icon: Home },
-  { type: "3 BHK", desc: "Perfect for Families", price: "Starting ₹65L", icon: Building2 },
-  { type: "4 BHK", desc: "Luxury Living", price: "Starting ₹95L", icon: Landmark },
+  { type: "2 BHK", desc: "Compact & Cozy", price: "₹50L and above", icon: Home },
+  { type: "3 BHK", desc: "Perfect for Families", price: "₹80L and above", icon: Building2 },
+  { type: "4 BHK", desc: "Luxury Living", price: "₹1Cr and above", icon: Landmark },
 ];
 
 const galleryImages = [gallery1, gallery2, gallery3, gallery4, gallery5];
@@ -42,7 +42,7 @@ const Navbar = () => {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'glass-card py-3' : 'py-6'}`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <a href="#" className="font-heading text-2xl font-bold text-gradient">Tenga & Sons</a>
+        <a href="#" className="font-heading text-2xl font-bold text-gradient">Acreage Homes</a>
         <div className="hidden md:flex gap-8 items-center">
           {['Properties', 'Gallery', 'Reviews', 'Contact'].map((item) => (
             <a 
@@ -56,7 +56,7 @@ const Navbar = () => {
           ))}
         </div>
         <a 
-          href="https://wa.me/916005154478" 
+          href="https://wa.me/6005154478" 
           target="_blank"
           className="btn-primary text-sm px-6 py-3"
         >
@@ -217,7 +217,7 @@ const Properties = () => (
             Easy financing options with competitive interest rates. We partner with leading banks to make your dream home affordable.
           </p>
           <a 
-            href="https://wa.me/916005154478?text=Hi, I'm interested in home loan options" 
+            href="https://wa.me/6005154478?text=Hi, I'm interested in home loan options" 
             target="_blank"
             className="btn-primary inline-flex"
           >
@@ -439,7 +439,7 @@ const Contact = () => {
             </div>
 
             <motion.a 
-              href="https://wa.me/916005154478"
+              href="https://wa.me/6005154478"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.02 }}
@@ -469,7 +469,7 @@ const Footer = () => (
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h3 className="font-heading text-4xl font-bold text-gradient mb-4">Tenga & Sons</h3>
+        <h3 className="font-heading text-4xl font-bold text-gradient mb-4">Acreage Homes</h3>
         <p className="text-muted-foreground mb-8 text-lg">Premium Real Estate Services in New Delhi</p>
         <div className="flex justify-center gap-8 mb-10">
           {['Properties', 'Gallery', 'Reviews', 'Contact'].map((item) => (
@@ -482,7 +482,7 @@ const Footer = () => (
             </a>
           ))}
         </div>
-        <p className="text-muted-foreground text-sm">© 2024 Tenga & Sons. All rights reserved.</p>
+        <p className="text-muted-foreground text-sm">© 2024 Acreage Homes. All rights reserved.</p>
       </motion.div>
     </div>
   </footer>
