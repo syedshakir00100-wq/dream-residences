@@ -4,7 +4,8 @@ import App from "./App.tsx";
 import "./index.css";
 
 createRoot(document.getElementById("root")!).render(
-  <BrowserRouter basename="/dream-residences">
+  <BrowserRouter basename="/">  // ← CHANGE TO ROOT
     <App />
   </BrowserRouter>
 );
+
